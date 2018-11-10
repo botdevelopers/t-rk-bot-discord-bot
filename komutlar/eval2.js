@@ -33,7 +33,7 @@ exports.conf = {
 };
 
 exports.help = {
-  name: 'eval',
+  name: 'eval2',
   description: 'Kod denemek için kullanılır.',
-  usage: 'eval [kod]'
+  usage: 'eval2 [kod]'
 };
