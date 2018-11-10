@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const chancejs = require('chance');
 const chance = new chancejs();
 
 const cevaplar = [
