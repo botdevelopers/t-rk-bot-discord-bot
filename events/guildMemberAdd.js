@@ -1,5 +1,5 @@
 module.exports = member => {
-  const channel = member.guild.channels.find('name', 'member-log');
+  const channel = member.guild.channels.find('name', 'hoşgeldiniz');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
