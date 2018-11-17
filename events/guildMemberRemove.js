@@ -6,7 +6,7 @@ module.exports = member => {
 const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setThumbnail(memberavatar)
-  .setDescription(':outbox_tray: ' + member + ' | Sunucudan Ayrıldı | Görüşürüz Bro!')
+  .setDescription(':outbox_tray: ' + member + ' | Sunucudan Ayrıldı | Güle Güle Bro!')
   channel.sendEmbed(embed);
   
   /**const channel = member.guild.channels.find('name', 'hoşgeldiniz');
