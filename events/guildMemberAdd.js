@@ -6,7 +6,7 @@ module.exports = member => {
 const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .setThumbnail(memberavatar)
-  .setDescription(':inbox_tray: ' + member + ' | Sunucuya Katıldı! | Hoşgeldin Bro!')
+  .setDescription(':inbox_tray: ' + member + ' | Sunucuya Katıldı | Hoşgeldin Bro!')
   channel.sendEmbed(embed);
   
   
