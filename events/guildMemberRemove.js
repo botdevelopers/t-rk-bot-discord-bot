@@ -4,7 +4,7 @@ module.exports = member => {
   let memberavatar = member.user.avatarURL;
   if (!channel) return;
 const embed = new Discord.RichEmbed()
-  .setAuthor(message.author.username, message.author.avatarURL)
+  .setAuthor(member.username, member.avatarURL)
   .setColor("RANDOM")
   .setThumbnail(memberavatar)
   .setDescription(':outbox_tray: ' + member + ' | Sunucudan Ayrıldı | Güle Güle Bro!')
