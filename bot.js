@@ -109,7 +109,6 @@ client.on('message', function(message){
         rl.close();
      }); **/
      }
-}
 	  }
 
 
