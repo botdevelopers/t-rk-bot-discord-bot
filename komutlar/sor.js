@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const Cleverbot = require('cleverbot-node');
 const clbot = new Cleverbot;
+let talkedRecently = new Set();
 
 exports.run = (client, message, args) => {
 	talkedRecently.add(message.author.id);
