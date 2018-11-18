@@ -109,7 +109,8 @@ client.on('message', function(message){
         rl.close();
      }); **/
      }
-
+}
+	  }
 
 
 client.elevation = message => {
