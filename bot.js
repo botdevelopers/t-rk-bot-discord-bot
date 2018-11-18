@@ -93,7 +93,7 @@ client.on('message', function(message){
     if(message.channel.type === 'dm'){
         //console.log("[" + message.author.username + "]: " + message.content) //Message from : Message
         var K = message.author.tag;
-		const embed = new Disc.RichEmbed()
+		const embed = new Discord.RichEmbed()
 			.setTitle("Yeni Özel Mesaj")
 			.setColor("RANDOM")
 			.addField('Kullanıcı', K)
