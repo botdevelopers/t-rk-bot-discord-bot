@@ -85,7 +85,26 @@ client.on('message', msg => {
 });
 
 
-
+client.on('guildCreate', guild => {
+  const girismesaj = [
+    '**Türk Bot Sunucunuza Eklendi!**',
+    '**Türk Bot** sunucunuzdaki insanlara kolaylıklar sağlar.',
+    'Bot __Osman Tunahan Arıkan tarafından geliştirilmektedir!__',
+    'Botumuzun özelliklerini öğrenmek için tr!yardım komutunu kullanabilirsin.',
+    `**Türk Bot Discord Sunucusu** https://discord.gg/tzyauT5`
+  ]
+guild.owner.sendMessage(girismesaj)
+  var guildID = "510472640197033984";
+  var channelID = "514086443862327297";
+const embed = new Discord.RichEmbed()
+  .setTitle("Yeni Sunucuya Eklendim!")
+  .setColor("RANDOM")
+  .addField('Sunucu Adı', guild.name)
+  .addField('ID', guild.id)
+  .addField('Sahibi', guild.owner + ' (' + guild.ownerID + ')')
+  .addField('Üye Sayısı', guild.memberCount)
+client.guilds.get(guildID).channels.get(channelID).send(embed);
+})
 
 
 client.elevation = message => {
