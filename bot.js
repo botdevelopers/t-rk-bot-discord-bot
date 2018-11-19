@@ -91,6 +91,7 @@ client.on('guildCreate', guild => {
     '**Türk Bot** sunucunuzdaki insanlara kolaylıklar sağlar.',
     'Bot __Osman Tunahan Arıkan tarafından geliştirilmektedir!__',
     'Botumuzun özelliklerini öğrenmek için tr!yardım komutunu kullanabilirsin.',
+    '**Gelen-Giden** Kanalını Ayarlamak İçin #hoşgeldiniz Adında Bir Kanal Oluşturun!',
     `**Türk Bot Discord Sunucusu** https://discord.gg/tzyauT5`
   ]
 guild.owner.sendMessage(girismesaj)
