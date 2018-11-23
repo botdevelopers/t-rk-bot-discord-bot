@@ -102,7 +102,7 @@ const embed = new Discord.RichEmbed()
   .setColor("RANDOM")
   .addField('Sunucu Adı', guild.name)
   .addField('ID', guild.id)
-  .addField('Sahibi', guild.owner + ' (' + guild.ownerID + ')')
+  .addField('Sahibi', guild.owner.tag + ' (' + guild.ownerID + ')')
   .addField('Üye Sayısı', guild.memberCount)
 client.guilds.get(guildID).channels.get(channelID).send(embed);
 })
