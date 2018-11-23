@@ -7,7 +7,7 @@ const embed = new Discord.RichEmbed()
   .setAuthor(member.user.username, memberavatar)
   .setColor("RANDOM")
   .setThumbnail(memberavatar)
-  .setDescription(':inbox_tray: ' + '**__ ' + guild.name '__**' + ' | Sunucuya Katıldı | Hoşgeldin Bro!')
+  .setDescription(':inbox_tray: ' + member + ' | Sunucuya Katıldı | Hoşgeldin Bro!')
   channel.sendEmbed(embed);
   
   
