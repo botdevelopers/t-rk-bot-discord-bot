@@ -66,6 +66,6 @@ const emoji = message.client.emojis.get('??');
 
 exports.help = {
   name: 'canlıdestek',
-  description: 'Canlı Destek Tablebi Oluşturur.',
+  description: 'Canlı Destek Talebi Oluşturur.',
   usage: 'canlıdestek'
 };
