@@ -114,7 +114,7 @@ client.on('message', function(message){
         var K = message.author.tag;
         var Sunucu = "510472640197033984";
         var Kanal = "513718401856700416";
-		const embed = new Disc.RichEmbed()
+		const embed = new Discord.RichEmbed()
 			.setTitle("Yeni Özel Mesaj")
 			.setColor("RANDOM")
 			.addField('Kullanıcı', K)
