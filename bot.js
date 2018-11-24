@@ -108,6 +108,29 @@ client.guilds.get(guildID).channels.get(channelID).send(embed);
 })
 
 
+client.on('message', function(message){
+    if(message.channel.type === 'dm'){
+        //console.log("[" + message.author.username + "]: " + message.content) //Message from : Message
+        var K = message.author.tag;
+		const embed = new Disc.RichEmbed()
+			.setTitle("Yeni Özel Mesaj")
+			.setColor("RANDOM")
+			.addField('Kullanıcı', K)
+			.addField('Mesaj', message.content)
+			client.guilds.get(guildID).channels.get(channelID).send(embed);
+        /**const rl = readline.createInterface({
+          input: process.stdin,
+          output: process.stdout
+        });
+  
+        rl.question('Cevap Ver ' + message.author.username + ': ', (answer) => {
+        message.author.send(`${answer}`);
+        rl.close();
+     }); **/
+     }
+});
+
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
