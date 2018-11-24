@@ -108,6 +108,21 @@ client.guilds.get(guildID).channels.get(channelID).send(embed);
 })
 
 
+const antispam = require("discord-anti-spam-tr");
+
+antispam(client, {
+  uyarmaSınırı: 3, //Uyarılmadan önce aralıkta gönderilmesine izin verilen maksimum mesaj miktarı.
+  banlamaSınırı: 5, //Yasaklanmadan önce aralıkta gönderilmesine izin verilen maksimum ileti miktar.
+  aralık: 1000, // ms kullanıcılarda zaman miktarı, yasaklanmadan önce aralık değişkeninin maksimumunu gönderebilir.
+  uyarmaMesajı: "Spamı Durdur Yoksa Mutelerim.", // Uyarı mesajı, kullanıcıya hızlı gideceklerini belirten kullanıcıya gönderilir..
+  rolMesajı: "Spam için yasaklandı, başka biri var mı?", //Yasak mesaj, yasaklanmış kullanıcıyı ,Banlar
+  maxSpamUyarı: 7,//Bir kullanıcının uyarılmadan önce bir zaman dilimi içinde gönderebileceği maksimum kopya sayısı
+  maxSpamBan: 10, //Bir kullanıcının yasaklanmadan önce bir zaman diliminde gönderebildiği maksimum kopya sayısı
+  zaman: 10, // Spamdan sonraki zaman
+  rolİsimi: "Susturulmuş", // Spam Atan Kullanıcılar Verilecek Röl
+});
+
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
